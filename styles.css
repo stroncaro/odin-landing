@@ -9,3 +9,76 @@
   margin: 0;
 }
 
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  padding: 8px 0;
+}
+
+.header .logo {
+  margin-right: auto;
+}
+
+.hero, .info, .quote, .call-to-action {
+  padding: 60px 0;
+}
+
+.hero div {
+  flex: 1;
+}
+
+.info {
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info h2 {
+  margin: 24px 0;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  width: 140px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote p:nth-child(1) {
+  width: 600px;
+}
+
+.quote p:nth-child(2) {
+  margin-left: 400px;
+}
+
+.cta-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 60px;
+}
+
+.footer {
+  padding: 24px 0;
+}
