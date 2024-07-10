@@ -22,6 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .section {
@@ -45,10 +47,16 @@ body {
 
 .header .logo {
   margin-right: auto;
+  font-size: 24px;
 }
 
 .hero div {
   flex: 1;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
 }
 
 .hero-button {
@@ -56,8 +64,9 @@ body {
   color: var(--color-white);
 }
 
-.header a, .hero-content p {
+.header a, .hero-content p, .footer {
   color: var(--color-gray);
+  font-size: 18px;
 }
 
 .info {
@@ -68,6 +77,8 @@ body {
 
 .info h2 {
   margin: 24px 0;
+  font-size: 36px;
+  font-weight: 900;
 }
 
 .info-content {
@@ -78,6 +89,10 @@ body {
 
 .card {
   width: 140px;
+}
+
+.card p {
+  font-size: 18px;
 }
 
 .card-img {
@@ -96,11 +111,18 @@ body {
 }
 
 .quote p:nth-child(1) {
-  width: 600px;
+  width: 700px;
+  
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .quote p:nth-child(2) {
   margin-left: 400px;
+
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .cta-box {
@@ -113,6 +135,15 @@ body {
   color: var(--color-white);
 }
 
+.cta-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cta-text p {
+  font-size: 18px;
+}
+
 .cta-button {
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -121,4 +152,8 @@ body {
 
 .footer {
   padding: 24px 0;
+}
+
+button {
+  font-weight: bold;
 }
