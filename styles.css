@@ -19,14 +19,25 @@
 
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.section:has(> .header), .section:has(> .hero), .section:has(> .footer) {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.section:has(> .quote) {
+  background-color: var(--color-gray);
+  color: var(--color-black);
+}
+
 .section {
+  display: flex;
+  justify-content: center;
+}
+
+.section > div {
   width: 1000px;
   display: flex;
   justify-content: center;
@@ -34,11 +45,6 @@ body {
 
 .hero, .info, .quote, .call-to-action {
   padding: 60px 0;
-}
-
-.header, .hero, .footer {
-  background-color: var(--color-black);
-  color: var(--color-white);
 }
 
 .header {
@@ -102,12 +108,8 @@ body {
 }
 
 .quote {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-
-  background-color: var(--color-gray);
-  color: var(--color-black);
+  align-items: center;  
 }
 
 .quote p:nth-child(1) {
