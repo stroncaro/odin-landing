@@ -111,9 +111,13 @@ body {
 }
 
 .card-img {
-  border: 2px solid var(--color-blue);
   width: 140px;
   height: 140px;
+}
+
+.card-img, .cta-box {
+  border: 2px solid var(--color-blue);
+  border-radius: 8px;
 }
 
 .quote {
