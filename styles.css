@@ -71,6 +71,14 @@ body {
   border-color: #3882f6;
 }
 
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5f6977;
+  color: var(--color-gray);
+}
+
 .header a, .hero-content p, .footer {
   color: var(--color-gray);
   font-size: 18px;
